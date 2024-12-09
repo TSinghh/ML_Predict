@@ -1,0 +1,14 @@
+<!-- restaurant_template.html -->
+<html>
+<head>
+    <title>Village Restaurant Menu</title>
+</head>
+<body>
+    <h1>{{ village_data.name }} - Menu</h1>
+    <ul>
+        {% for item in village_data %}
+            <li>{{ item.name }} - ${{ item.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
